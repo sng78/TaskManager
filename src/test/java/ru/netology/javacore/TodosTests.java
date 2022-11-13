@@ -42,5 +42,4 @@ public class TodosTests {
         todos.addTask("Обед");
         Assertions.assertEquals("Завтрак Обед \n", todos.getAllTasks());
     }
-
 }

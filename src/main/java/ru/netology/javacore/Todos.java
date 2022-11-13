@@ -4,12 +4,13 @@ import java.util.*;
 
 public class Todos {
     protected List<String> tasks = new ArrayList<>();
+    protected final int maxTasks = 7;
 
     public Todos() {
     }
 
     public void addTask(String task) {
-        if (tasks.size() < 7) {
+        if (tasks.size() < maxTasks) {
             tasks.add(task);
         }
     }

@@ -31,10 +31,13 @@ public class TodoServer {
                     Gson gson = builder.create();
                     Task taskNew = gson.fromJson(jsonText, Task.class);
 
-                    if (taskNew.type.equals("ADD")) {
-                        todos.addTask(taskNew.task);
-                    } else if (taskNew.type.equals("REMOVE")) {
-                        todos.removeTask(taskNew.task);
+                    switch (taskNew.type) {
+                        case "ADD":
+                            todos.addTask(taskNew.task);
+                            break;
+                        case "REMOVE":
+                            todos.removeTask(taskNew.task);
+                            break;
                     }
 
                     out.println(todos.getAllTasks());
@@ -45,5 +48,4 @@ public class TodoServer {
             e.printStackTrace();
         }
     }
-
 }
