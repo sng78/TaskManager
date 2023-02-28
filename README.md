@@ -5,7 +5,7 @@
 - В ответ на запрос сервер должен присылать текущее состояние списка задач после совершения операции
 
 ***Используемые технологии:***
-- Java JDK 11, Collections, Git, Github, IntelliJ IDEA, Maven, JUnit
+- Java JDK 11, Collections, Git, Github, IntelliJ IDEA, Maven, JUnit, библиотека GSon от Google
 
 ***Результаты:***
 - Для парсинга входных данных подключения используется библиотека GSon от Google
